@@ -1,0 +1,41 @@
+.btn05 {
+	color: #000;
+	display: circle;
+	text-decoration: none;
+	width: 1000px;
+	position: relative;
+	perspective: 200px;
+	-webkit-perspective: 200px;
+}
+
+.btn05 input {
+	/*margin: 10px;*/
+	text-align: center;
+	display: block;
+	width: 100px;
+	padding: 20px 0;
+	background-color: #fff;
+	position:absolute;
+	top: 0;
+	margin-top: 20px;
+	transition: 0.8s;
+	backface-visibility: hidden;
+	-webkit-backface-visibility: hidden;
+	
+}
+
+.btn05 .back{
+	background-color: #fff;
+	transform:rotateY(180deg);
+	-webkit-transform:rotateY(180deg);
+	}
+
+.btn05:hover .front{
+	transform:rotateY(180deg);
+	-webkit-transform:rotateY(180deg);
+}	
+
+.btn05:hover .back{
+	transform:rotateY(360deg);
+	-webkit-transform:rotateY(360deg);
+}	
